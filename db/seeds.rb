@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Bar.create!([
+  { name: "The Rooftop", street_address: "123 Up the Stairs Dr", city: "Atlanta", state: "GA", zip_code: "30033", hours: "12-8", image_url: "https://images.unsplash.com/photo-1556911899-5df3026220fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9vZnRvcCUyMGJhcnxlbnwwfHwwfHx8MA%3D%3D" },
+  { name: "The One with the Plants", street_address: "456 Allergies Galore St", city: "Atlanta", state: "GA", zip_code: "30033", hours: "11-8", image_url: "https://images.unsplash.com/photo-1622758235004-51977c5863f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cm9vZnRvcCUyMGJhcnxlbnwwfHwwfHx8MA%3D%3D" },
+  { name: "The Dive", street_address: "567 Figure it Out Ave", city: "Atlanta", state: "GA", zip_code: "30304", hours: "whenever", image_url: "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGl2ZSUyMGJhcnxlbnwwfHwwfHx8MA%3D%3D" },
+  { name: "The Neighbood Bar", street_address: "123 Drunk Ave", city: "Atlanta", state: "GA", zip_code: "30304", hours: "12-3am", image_url: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRpdmUlMjBiYXJ8ZW58MHx8MHx8fDA%3D" },
+  { name: "The Speakeasy", street_address: "3333 Not Telling You St", city: "Atlanta", state: "GA", zip_code: "30304", hours: "unknown", image_url: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFyfGVufDB8fDB8fHww" },
+])

@@ -5,4 +5,5 @@ json.city bar.city
 json.zip_code bar.zip_code
 json.state bar.state
 json.hours bar.hours
+json.specials bar.specials
 json.image_url bar.image_url

@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  #bars routes
+  get "/bars" => "bars#index"
+  get "/bars/:id" => "bars#show"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  ##bar routes that may be used later
+
+  #  patch "/bars/:id" => "bars#update"
+  #  delete "/bars/:id" => "bars#destroy"
+  #  post "/bars" => "bars#create"
 end

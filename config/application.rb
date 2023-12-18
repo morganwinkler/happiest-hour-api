@@ -18,16 +18,5 @@ module HappiestHourApi
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-
-    #config rails to run postgres db instead of sqlite
-    config.generators do |g|
-      g.orm :active_record, primary_key_type: :uuid
-      g.template_engine :erb
-      g.test_framework :test_unit, fixture: false
-      g.stylesheets false
-      g.javascripts false
-      g.helper false
-      g.system_tests false
-    end
   end
 end

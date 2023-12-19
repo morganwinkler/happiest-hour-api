@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   #user login/signup routes
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+  #show users favorites route
+  get "/favorites" => "favorites#index"
 
   ##bar routes that may be used later
 

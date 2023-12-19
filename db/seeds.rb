@@ -17,3 +17,11 @@ Special.create!([
   { bar_id: 5, special: "$8 Negroni" },
   { bar_id: 5, special: "$5 Gimlet" },
 ])
+Category.create!([
+  { category: "Liquor" },
+  { category: "Beer" },
+  { category: "Wine" },
+  { category: "Shots" },
+  { category: "Frozen" },
+  { category: "Craft" },
+])

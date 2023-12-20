@@ -9,3 +9,4 @@ json.specials bar.specials
 json.categories bar.category
 json.image_url bar.image_url
 json.favorites bar.favorites.count
+json.reviews bar.reviews

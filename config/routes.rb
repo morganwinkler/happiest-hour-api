@@ -9,15 +9,15 @@ Rails.application.routes.draw do
   #favorites routes
   get "/favorites" => "favorites#index"
   post "/favorites" => "favorites#create"
-  delete "/favorites" => "favorites#destroy"
+  delete "/favorites/:id" => "favorites#destroy"
   #review routes
   get "/reviews" => "reviews#index"
   post "/reviews" => "reviews#create"
-  delete "/reviews" => "reviews#destroy"
+  delete "/reviews/:id" => "reviews#destroy"
   #note routes
   get "/notes" => "notes#index"
   post "/notes" => "notes#create"
-  delete "/notes" => "notes#destroy"
+  delete "/notes/:id" => "notes#destroy"
 
   ##bar routes that may be used later
 

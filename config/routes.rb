@@ -14,6 +14,10 @@ Rails.application.routes.draw do
   get "/reviews" => "reviews#index"
   post "/reviews" => "reviews#create"
   delete "/reviews" => "reviews#destroy"
+  #note routes
+  get "/notes" => "notes#index"
+  post "/notes" => "notes#create"
+  delete "/notes" => "notes#destroy"
 
   ##bar routes that may be used later
 

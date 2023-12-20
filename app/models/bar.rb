@@ -2,6 +2,7 @@ class Bar < ApplicationRecord
   has_many :specials
   has_many :favorites
   has_many :reviews
+  has_many :notes
   has_many :category_specials
   # has_many :categories, through: :category_specials
 

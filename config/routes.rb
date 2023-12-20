@@ -4,11 +4,16 @@ Rails.application.routes.draw do
   get "/bars/:id" => "bars#show"
   #user login/signup routes
   post "/users" => "users#create"
+  get "/users" => "users#show"
   post "/sessions" => "sessions#create"
-  #favorites route
+  #favorites routes
   get "/favorites" => "favorites#index"
   post "/favorites" => "favorites#create"
   delete "/favorites" => "favorites#destroy"
+  #review routes
+  get "/reviews" => "reviews#index"
+  post "/reviews" => "reviews#create"
+  delete "/reviews" => "reviews#destroy"
 
   ##bar routes that may be used later
 

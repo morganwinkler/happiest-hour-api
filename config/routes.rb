@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get "/bars/:id" => "bars#show"
   #user login/signup routes
   post "/users" => "users#create"
-  get "/users" => "users#show"
+  get "/users/:id" => "users#show"
   post "/sessions" => "sessions#create"
   #favorites routes
   get "/favorites" => "favorites#index"

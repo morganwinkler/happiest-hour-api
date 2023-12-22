@@ -16,13 +16,20 @@ class FavoritesController < ApplicationController
         user_id: current_user.id,
         bar_id: params[:bar_id],
       )
-      render json: { message: "Bar has been added to your favorites!" }
+      if @favorite.save
+        render :show, status: :created
+      else
+        render json: { message: "You messed up somewhere" }
+      end
     end
   end
 
   def destroy
     @favorite = Favorite.find_by(id: params[:id])
-    @favorite.destroy
-    render json: { message: "Bar has been removed from favorites." }
+    if @favorite.destroy
+      render json: { message: "Bar has been removed from favorites." }
+    else
+      render json: { message: "You f'ed up" }
+    end
   end
 end

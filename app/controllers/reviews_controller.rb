@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
       bar_id: params[:bar_id],
       review: params[:review],
     )
-    render json: { message: "Review has been added!" }
+    render :show
   end
 
   def destroy

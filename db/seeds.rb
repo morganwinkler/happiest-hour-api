@@ -4,6 +4,11 @@
 #   { name: "The Dive", street_address: "567 Figure it Out Ave", city: "Atlanta", state: "GA", zip_code: "30304", hours: "whenever", image_url: "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGl2ZSUyMGJhcnxlbnwwfHwwfHx8MA%3D%3D" },
 #   { name: "The Neighbood Bar", street_address: "123 Drunk Ave", city: "Atlanta", state: "GA", zip_code: "30304", hours: "12-3am", image_url: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRpdmUlMjBiYXJ8ZW58MHx8MHx8fDA%3D" },
 #   { name: "The Speakeasy", street_address: "3333 Not Telling You St", city: "Atlanta", state: "GA", zip_code: "30304", hours: "unknown", image_url: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFyfGVufDB8fDB8fHww" },
+# { name: "The Nightclub", street_address: "444 Night Owl Dr", city: "Atlanta", state: "GA", zip_code: "30033", hours: "10pm-3am", image_url: "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhcnxlbnwwfHwwfHx8MA%3D%3D" },
+#   { name: "The Blue One", street_address: "457 Hipster Street", city: "Atlanta", state: "GA", zip_code: "30033", hours: "11am-8pm", image_url: "https://media.istockphoto.com/id/1495004005/photo/ice-cream-shop-interior-with-table-stools-turquoise-ceiling-and-ice-cream-flavors-on-display.webp?b=1&s=170667a&w=0&k=20&c=6Ku_QFEUO_cDUywPUKbe1_xUeRzFjnD0ETJk3nhu6SY=" },
+#   { name: "The Open Bar", street_address: "567 Drink Water Court", city: "Atlanta", state: "GA", zip_code: "30304", hours: "12pm-10pm", image_url: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D" },
+#   { name: "The Plants Pt 2", street_address: "1245 Basic Ave", city: "Atlanta", state: "GA", zip_code: "30304", hours: "12pm-9pm", image_url: "https://images.unsplash.com/photo-1586999768265-24af89630739?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D" },
+#   { name: "The Trippy One", street_address: "3333 Where Am I Dr", city: "Atlanta", state: "GA", zip_code: "30304", hours: "11 am- 11pm", image_url: "https://plus.unsplash.com/premium_photo-1661953124283-76d0a8436b87?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D" },
 # ])
 
 # Special.create!([
@@ -16,6 +21,16 @@
 #   { bar_id: 4, special: "$5 Vodka Bombs" },
 #   { bar_id: 5, special: "$8 Negroni" },
 #   { bar_id: 5, special: "$5 Gimlet" },
+# { bar_id: 6, special: "$100 House Bottle Champagne" },
+#   { bar_id: 6, special: "$5 Vodka & Redbull" },
+#   { bar_id: 7, special: "$8 Mezcal" },
+#   { bar_id: 7, special: "$6 Margarita" },
+#   { bar_id: 8, special: "$3 Prosecco " },
+#   { bar_id: 8, special: "$7 Buffalo Trace" },
+#   { bar_id: 9, special: "$9 Irish Car Bombs" },
+#   { bar_id: 9, special: "$4 Corona" },
+#   { bar_id: 10, special: "$6 Guinness" },
+#   { bar_id: 10, special: "$5 Heineken" },
 # ])
 # Category.create!([
 #   { category: "Liquor" },
@@ -42,23 +57,25 @@
 #   { bar_id: 5, special_id: 8, category_id: 6 },
 #   { bar_id: 5, special_id: 9, category_id: 6 },
 #   { bar_id: 5, special_id: 9, category_id: 1 },
+#   { bar_id: 6, special_id: 10, category_id: 3 },
+#   { bar_id: 6, special_id: 11, category_id: 1 },
+#   { bar_id: 7, special_id: 12, category_id: 1 },
+#   { bar_id: 7, special_id: 13, category_id: 1 },
+#   { bar_id: 7, special_id: 13, category_id: 6 },
+#   { bar_id: 8, special_id: 14, category_id: 3 },
+#   { bar_id: 8, special_id: 15, category_id: 1 },
+#   { bar_id: 9, special_id: 16, category_id: 1 },
+#   { bar_id: 9, special_id: 16, category_id: 2 },
+#   { bar_id: 9, special_id: 16, category_id: 4 },
+#   { bar_id: 9, special_id: 17, category_id: 2 },
+#   { bar_id: 10, special_id: 18, category_id: 2 },
+#   { bar_id: 10, special_id: 19, category_id: 2 },
 # ])
 # User.create!([
 #   { name: "Mike", email: "mike@gmail.com", password: "password", password_confirmation: "password" },
 #   { name: "Morgan", email: "morgan@gmail.com", password: "password", password_confirmation: "password" },
 #   { name: "Tracy", email: "tracy@gmail.com", password: "password", password_confirmation: "password" },
 #   { name: "Scott", email: "scott@gmail.com", password: "password", password_confirmation: "password" },
-# ])
-
-# Favorite.create!([
-#   { user_id: 1, bar_id: 1 },
-#   { user_id: 1, bar_id: 2 },
-#   { user_id: 2, bar_id: 1 },
-#   { user_id: 2, bar_id: 5 },
-#   { user_id: 3, bar_id: 3 },
-#   { user_id: 3, bar_id: 2 },
-#   { user_id: 4, bar_id: 5 },
-#   { user_id: 4, bar_id: 4 },
 # ])
 
 # Review.create!([
@@ -74,11 +91,11 @@
 #   { bar_id: 5, user_id: 5, review: "Great bartenders!" },
 # ])
 
-Note.create!([
-  { bar_id: 1, user_id: 1, note: "Request linda for server" },
-  { bar_id: 2, user_id: 1, note: "Ask for light simple with mojitos" },
-  { bar_id: 3, user_id: 3, note: "Don't go when Greg is working" },
-  { bar_id: 4, user_id: 2, note: "They have yellow redbull!" },
-  { bar_id: 5, user_id: 4, note: "Remember to dress up next time" },
-  { bar_id: 5, user_id: 5, note: "Password for the day is on the bottom of their website" },
-])
+# Note.create!([
+#   { bar_id: 1, user_id: 1, note: "Request linda for server" },
+#   { bar_id: 2, user_id: 1, note: "Ask for light simple with mojitos" },
+#   { bar_id: 3, user_id: 3, note: "Don't go when Greg is working" },
+#   { bar_id: 4, user_id: 2, note: "They have yellow redbull!" },
+#   { bar_id: 5, user_id: 4, note: "Remember to dress up next time" },
+#   { bar_id: 5, user_id: 5, note: "Password for the day is on the bottom of their website" },
+# ])

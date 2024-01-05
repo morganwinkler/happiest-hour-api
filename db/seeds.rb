@@ -88,7 +88,6 @@ Review.create!([
   { bar_id: 4, user_id: 1, review: "Great place if you're looking to be annoyed by Chad's and Brad's" },
   { bar_id: 4, user_id: 1, review: "Best shots in town" },
   { bar_id: 5, user_id: 4, review: "This is the best place ever I wish I could tell you where it is" },
-  { bar_id: 5, user_id: 5, review: "Great bartenders!" },
 ])
 
 Note.create!([
@@ -97,5 +96,4 @@ Note.create!([
   { bar_id: 3, user_id: 3, note: "Don't go when Greg is working" },
   { bar_id: 4, user_id: 2, note: "They have yellow redbull!" },
   { bar_id: 5, user_id: 4, note: "Remember to dress up next time" },
-  { bar_id: 5, user_id: 5, note: "Password for the day is on the bottom of their website" },
 ])

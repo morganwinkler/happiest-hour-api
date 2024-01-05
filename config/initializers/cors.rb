@@ -1,6 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "*"
+    origins "*", "localhost:5173", "https://happiest-hour.onrender.com"
     resource "*", headers: :any, methods: [:get, :post, :patch, :put, :delete]
   end
 end

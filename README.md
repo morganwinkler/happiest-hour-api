@@ -2,6 +2,10 @@
 
 Happiest Hour API is a Ruby on Rails application that provides endpoints for user authentication, bar information, reviews, private notes, and favorites.
 
+[Watch the Full Stack Demo Video](https://www.canva.com/design/DAF5Hh65lEw/YeSQG5KzlAA9cRqeFUt0SA/watch?utm_content=DAF5Hh65lEw&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
+
+
 ## Table of Contents
 
 - [Features](#features)
